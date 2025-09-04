@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>إنشاء مقال</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">موقع المقالات</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">  
+            <li class="nav-item"><a class="nav-link" href="/index.html">المقالات</a></li>
+          <li class="nav-item"><a class="nav-link active" href="submit.html">إنشاء مقال</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">من نحن</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">تواصل معنا</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Form Content -->
+  <div class="container mt-5 pt-5">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <h1 class="mb-4 text-center">إنشاء مقال جديد</h1>
+
+        <form>
+          <!-- العنوان -->
+          <div class="mb-3">
+            <label for="title" class="form-label">عنوان المقال</label>
+            <input type="text" class="form-control" id="title" placeholder="اكتب عنوان المقال">
+          </div>
+
+          <!-- النبذة -->
+          <div class="mb-3">
+            <label for="summary" class="form-label">نبذة قصيرة</label>
+            <input type="text" class="form-control" id="summary" placeholder="اكتب نبذة عن المقال">
+          </div>
+
+          <!-- المحتوى -->
+          <div class="mb-3">
+            <label for="content" class="form-label">محتوى المقال</label>
+            <textarea class="form-control" id="content" rows="6" placeholder="اكتب هنا النص الكامل للمقال..."></textarea>
+          </div>
+
+          <!-- الصورة -->
+          <div class="mb-3">
+            <label for="image" class="form-label">رفع صورة</label>
+            <input class="form-control" type="file" id="image">
+          </div>
+
+          <!-- زرار -->
+          <button type="submit" class="btn btn-primary">إرسال المقال</button>
+          <button type="reset" class="btn btn-secondary">مسح</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3 mt-5">
+    <p>جميع الحقوق محفوظة &copy; 2025 موقع المقالات</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
